@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="Author" content="dynamic creative" />
+    <meta name="description" content="" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bandit manchot</title>
+
+    <!-- Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/ruby.png" />
+  </head>
+
+  <body>
+    <!--Header-->
+
+    <header class="head-1">
+      <div class="container d-flex flex-column h-100">
+        <div class="top-logo d-flex justify-content-between align-items-center">
+          <div class="logo-fromage">
+            <img
+              src="img/logo-fromage.png"
+              width="289"
+              height="55"
+              alt="qui veut du fromage"
+            />
+          </div>
+          <div class="logo-marmiton">
+            <img
+              src="img/logo-marmiton.svg"
+              width="180"
+              height="28"
+              alt="marmiton"
+            />
+          </div>
+        </div>
+        <div class="m-auto titre_top text-center">
+          <h1>Grand Jeu Concours</h1>
+          <div class="date">du --/--/2021 au 28/11/2021</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Jackpot entier -->
+    <div class="title-content">
+      <p class="title-form">
+        <b>
+          Cliquez sur le manche et tentez de remporter
+          <span class="color-2">un cours de cuisine</span> avec
+          <span class="style-nom">@NOMINFLUENCEUR</span>
+        </b>
+      </p>
+    </div>
+    
+      <!-- SVG Machine background -->
+      <section class="responsive-game">
+        <div id="jackpot-bg">
+          <img src="img/bg-casino.svg" alt="background jackpot" />
+
+          <!-- Slots -->
+          <div id="jackpot-slot">
+            <div class="base-machine">
+              
+                
+                <div class="slot">
+                  <div class="band"><img src="img/bande.jpg" /></div>
+                </div>
+
+                <div class="slot">
+                  <div class="band1"><img src="img/bande.jpg" /></div>
+                </div>
+
+                <div class="slot">
+                  <div class="band2"><img src="img/bande.jpg" /></div>
+                </div>
+
+              
+            </div>
+          </div>
+
+          <!-- Manche de la machine -->
+          <div id="jackpot-stick" class="col">
+            <svg
+              id="trigger"
+              width="35"
+              height="144"
+              viewBox="0 0 35 143.6"
+            >
+              <defs>
+                <linearGradient
+                  id="linear-gradient"
+                  x1="0%"
+                  y1="51%"
+                  x2="100%"
+                  y2="49%"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop
+                    offset="0%"
+                    style="stop-color: rgb(255, 174, 44); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="100%"
+                    style="stop-color: rgb(255, 219, 138); stop-opacity: 1"
+                  />
+                </linearGradient>
+                <linearGradient
+                  id="linear-gradient-2"
+                  x1="23.71"
+                  y1="127.98"
+                  x2="23.71"
+                  y2="83.01"
+                  xlink:href="#linear-gradient"
+                />
+                <linearGradient
+                  id="linear-gradient-3"
+                  x1="20.46"
+                  y1="55.66"
+                  x2="25.41"
+                  y2="55.66"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stop-color="#6b6b6b" />
+                  <stop offset="1" stop-color="#454545" />
+                </linearGradient>
+                <radialGradient
+                  id="radial-gradient"
+                  cx="50%"
+                  cy="50%"
+                  r="50%"
+                  gradientTransform="translate(1.5 -0.3) scale(0.93 0.93)"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop
+                    offset="0%"
+                    style="stop-color: rgb(175, 29, 74); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="100%"
+                    style="stop-color: rgb(228, 54, 85); stop-opacity: 1"
+                  />
+                </radialGradient>
+              </defs>
+              <path
+                id="ring1"
+                d="M0,67.4H7.3a5.1,5.1,0,0,1,5.1,5.1v66.1a5.1,5.1,0,0,1-5.1,5.1H0a0,0,0,0,1,0,0V67.4A0,0,0,0,1,0,67.4Z"
+                fill="url(#linear-gradient)"
+              />
+              <path
+                id="ring2"
+                d="M12.4,83H29.7A5.3,5.3,0,0,1,35,88.3v34.4a5.3,5.3,0,0,1-5.3,5.3H12.4a0,0,0,0,1,0,0V83A0,0,0,0,1,12.4,83Z"
+                fill="url(#linear-gradient-2)"
+              />
+              <ellipse
+                id="hole"
+                cx="22.9"
+                cy="88.6"
+                rx="5.9"
+                ry="2.2"
+                fill="#3f3f3f"
+              />
+              <rect
+                id="stick"
+                x="20.5"
+                y="22.2"
+                width="5"
+                height="66.88"
+                fill="url(#linear-gradient-3)"
+              />
+              <ellipse
+                id="head"
+                cx="22.9"
+                cy="11.3"
+                rx="11.2"
+                ry="11.3"
+                fill="url(#radial-gradient)"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+    <!-- Modal Bootstrap perdu/gagné une fois l'animation jackpot terminée -->
+    <div class="modal" id="modal-box" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"></h5>
+            <button
+              type="button"
+              class="btn-close close"
+              data-dismiss="modal"
+              aria-label="Close"
+              data-toggle="modal"
+              data-backdrop="false"
+            ></button>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary btn-fermer close"
+              data-dismiss="modal"
+              data-toggle="modal"
+              data-backdrop="false"
+            >
+              Fermer
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bibliothèques JS + plugin + script.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"
+    ></script>
+    <script src="js/jquery.jackpotDC.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

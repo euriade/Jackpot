@@ -1,0 +1,190 @@
+/*** Global ***/
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+:root {
+  --machine-w: 400px;
+  --machine-h: 150px;
+}
+
+/*** Responsive ***/
+
+@media screen and (max-width: 959px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .logo-fromage img {
+    height: 40px;
+    width: auto;
+  }
+
+  .logo-marmiton img {
+      height: 20px;
+      width: auto;
+  }
+}
+
+.head-1 {
+  background: url(../img/bg-top-1.jpg) center center no-repeat;
+  height: 192px;
+  padding-top: 10px;
+}
+
+.titre_top {
+  padding-bottom: 45px;
+  color: #fff;
+}
+.titre_top .date {
+  font-size: 16px;
+}
+.title-form {
+  color: #324c5c;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 15px;
+  font-size: 1.5em;
+  font-family: "Source Serif Pro", serif;
+}
+
+.color-2 {
+  color: #e25944;
+}
+
+.style-nom {
+  background: #f9d643;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+body {
+  font-weight: 600;
+  text-align: center;
+  background: #f2f2f2;
+  width: 100%;
+  overflow: hidden;
+}
+
+.titre-jeu {
+  margin-top: 1rem;
+  font-family: "Source Serif Pro", serif;
+}
+
+h1,
+h2,
+.titre-jeu {
+  color: white;
+  font-family: "Source Serif Pro", serif;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+/*** Jackpot ***/
+.responsive-game {
+  width: 80%;
+  margin: auto;
+}
+
+#jackpot-bg {
+  position: relative;
+  padding-top: 50px;
+  max-width: 480px;
+  margin: auto;
+}
+
+#jackpot-slot {
+  position: absolute;
+  top: 66%;
+  left: 48%;
+  width: 76%;
+  transform: translateX(-50%);
+}
+
+#jackpot-slot::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(
+    top,
+    #ffae2c 0%,
+    #f9e7b7 36%,
+    #ffae2c 100%
+  );
+  border-radius: 3px;
+  top: 0;
+  left: 0;
+}
+
+#jackpot-stick {
+  cursor: pointer;
+  position: absolute;
+  top: 57%;
+  left: 91.5%;
+  width: 7.29%;
+}
+
+#trigger {
+  width:100%;
+  height: auto;
+}
+
+.base-machine {
+  /** height: var(--machine-h);
+  background: -webkit-linear-gradient(top, #cb5838 0%, #cb5838 100%);
+  border-radius: 15px; **/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.base-frame {
+  width: 95%;
+  height: 85%;
+  opacity: 1;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.slot {
+  /** width: calc((var(--machine-w) / 3) - 20px);
+  height: calc(var(--machine-h) - 40px); **/
+  background: #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 33.33333%;
+  margin: 5px;
+}
+
+.band,
+.band1,
+.band2 {
+  /** width: 150px; **/
+  position: relative;
+}
+
+.band img,
+.band1 img,
+.band2 img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: auto;
+}
+
+.event-none {
+  pointer-events: none;
+}
